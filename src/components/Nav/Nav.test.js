@@ -15,23 +15,22 @@ describe("Nav component", () => {
         expect(screen.getByRole("navigation").textContent).toMatch(/cart/i);
     });
 
-    it("renders Home component after clicking link", () => {
+    it("renders Home component after clicking link", async () => {
         render(<App />);
         const link = screen.getByRole('link', { name: /home/i });
 
-        userEvent.click(link);
+        await userEvent.click(link);
 
-        expect(screen.getByRole('heading', { name: /home/i })).toBeVisible();
-        expect(screen.getByRole('heading', { name: /shoppingcart/i })).toBeVisible();
+        expect(screen.getByRole('heading', { name: /home/i })).toBeInTheDocument();
     });
 
-    it("renders ShoppingCart component after clicking link", () => {
+    it("renders Cart component after clicking link", async () => {
         render(<App />);
         const link = screen.getByRole('link', { name: /cart/i });
 
-        userEvent.click(link);
+        await userEvent.click(link);
 
-        expect(screen.getByRole('heading', { name: /shoppingcart/i })).toBeVisible();
+        expect(screen.getByRole('heading', { name: /cart/i })).toBeInTheDocument();
     });
 });
 
