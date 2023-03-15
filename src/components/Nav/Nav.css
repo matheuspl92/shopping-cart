@@ -1,0 +1,27 @@
+nav {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 0 36px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 64px;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
