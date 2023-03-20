@@ -24,13 +24,13 @@ describe("Nav component", () => {
         expect(screen.getByRole('heading', { name: /home/i })).toBeInTheDocument();
     });
 
-    it("renders Cart component after clicking link", async () => {
+    it("renders Shop component after clicking link", async () => {
         render(<App />);
-        const link = screen.getByRole('link', { name: /cart/i });
+        const link = screen.getByRole('link', { name: /shop/i });
 
         await userEvent.click(link);
 
-        expect(screen.getByRole('heading', { name: /cart/i })).toBeInTheDocument();
+        expect(screen.getByRole('heading', { name: /shop/i })).toBeInTheDocument();
     });
 });
 
