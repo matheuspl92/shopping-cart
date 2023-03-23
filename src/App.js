@@ -8,7 +8,7 @@ import Cart from "./components/Cart/Cart";
 import Shop from "./components/Shop/Shop";
 
 function App() {
-  const { cart, setCart } = useState([]);
+  const [ cart, setCart ] = useState([]);
 
   const addToCart = (order) => {
     let [ ...newState ] = cart;
