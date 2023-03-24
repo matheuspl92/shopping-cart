@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "./components/Nav/Nav";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,6 +15,10 @@ function App() {
     newState.push(order);
     setCart(newState);
   }
+
+  useEffect(() => {
+    console.log(cart)
+  }, [cart])
 
   return (
     <BrowserRouter>

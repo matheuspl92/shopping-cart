@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Card, FormControl } from 'react-bootstrap';
 
-export default function ItemCard({ title = 'Card Title', text = "Some quick example text to build on the card title and make up the bulk of the card's content.", srcImage = "holder.js/100px180" }) {
+export default function ItemCard({ title = 'Card Title', text = "Some quick example text to build on the card title and make up the bulk of the card's content.", srcImage = "holder.js/100px180", addToCart }) {
   const [orderQtd, setOrderQtd] = useState('');
 
   const handleQtdChange = (event) => {
@@ -9,6 +9,12 @@ export default function ItemCard({ title = 'Card Title', text = "Some quick exam
 
     (qtd > 0) ? setOrderQtd(qtd) : setOrderQtd('');
     console.log(qtd)
+  }
+
+  const handleAdd = () => {
+    if (orderQtd !== '') {
+      addToCart({ title, text, srcImage, orderQtd });
+    }
   }
 
   return (
@@ -21,7 +27,7 @@ export default function ItemCard({ title = 'Card Title', text = "Some quick exam
         </Card.Text>
         <div>
           <FormControl type='number' value={orderQtd} placeholder='Quantity' onChange={(event) => { handleQtdChange(event) }} />
-          <Button variant="dark">Add to cart</Button>
+          <Button variant="dark" onClick={handleAdd}>Add to cart</Button>
         </div>
       </Card.Body>
     </Card>
