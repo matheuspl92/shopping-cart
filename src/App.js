@@ -23,7 +23,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Nav />
+        <Nav cart={cart} />
         <Routes>
           <Route path='/' element={<Home cart={cart} />} />
           <Route path='/shop' element={<Shop cart={cart} addToCart={addToCart}/>} />
