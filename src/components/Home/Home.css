@@ -1,0 +1,19 @@
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+#top {
+}
+
+#bottom {
+    background-color: black;
+    color: white;
+    align-items: center;
+    gap: 18px;
+    padding-top: 18px;
+}
