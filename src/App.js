@@ -6,6 +6,7 @@ import './App.css';
 import Home from "./components/Home/Home";
 import Cart from "./components/Cart/Cart";
 import Shop from "./components/Shop/Shop";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [ cart, setCart ] = useState([]);
@@ -29,6 +30,7 @@ function App() {
           <Route path='/shop' element={<Shop cart={cart} addToCart={addToCart}/>} />
           <Route path='/cart' element={<Cart cart={cart} />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );

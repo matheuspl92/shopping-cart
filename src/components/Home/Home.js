@@ -43,11 +43,6 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <section id='bottom'>
-        <Button variant='light'>Subscribe to newsletter</Button>
-        <p>Terms and Conditions | Privacy | Trademarks | Cookies Policy | Cookies Settings</p>
-        <p>© 2023 RedTeam Online Store</p>
-      </section>
     </div>
   )
 }
