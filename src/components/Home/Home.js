@@ -11,8 +11,8 @@ export default function Home() {
       </section>
       <section id='middle'>
         <Container >
-          <Row className='d-flex justify-content-between align-items-top'>
-            <Card className='border-0' style={{ width: '24rem' }}>
+          <Row className='d-flex justify-content-center align-items-top'>
+            <Card className='border-0' style={{ width: '26rem' }}>
               <Card.Img variant="top" src="https://www.amd.com/system/files/styles/992px/private/2022-10/1678052-high-performance-rendering-1260x709.jpg?itok=yoOitXOh" />
               <Card.Body>
                 <Card.Title>High Performance Rendering</Card.Title>
@@ -21,7 +21,7 @@ export default function Home() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card className='border-0' style={{ width: '24rem' }}>
+            <Card className='border-0' style={{ width: '26rem' }}>
               <Card.Img variant="top" src="https://www.amd.com/system/files/styles/992px/private/2022-10/1678052-amd-rdna3-chip-diagram-1260x709_0.jpg?itok=WkZaF2lp" />
               <Card.Body>
                 <Card.Title>AMD Radiance Display™ Engine</Card.Title>
@@ -30,7 +30,7 @@ export default function Home() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card className='border-0' style={{ width: '24rem' }}>
+            <Card className='border-0' style={{ width: '26rem' }}>
               <Card.Img variant="top" src="https://www.amd.com/system/files/styles/992px/private/2023-02/1875004-lou-keyart-w-radeon-bundle-1260x709_0.jpg?itok=N67hLnEH" />
               <Card.Body>
                 <Card.Title>Get THE LAST OF US™ Part I</Card.Title>
