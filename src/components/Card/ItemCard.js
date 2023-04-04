@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Card, FormControl } from 'react-bootstrap';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ItemCard({ title = 'Card Title', text = "Some quick example text to build on the card title and make up the bulk of the card's content.", srcImage = "holder.js/100px180", addToCart }) {
   const [orderQtd, setOrderQtd] = useState('');
@@ -13,7 +14,7 @@ export default function ItemCard({ title = 'Card Title', text = "Some quick exam
 
   const handleAdd = () => {
     if (orderQtd !== '') {
-      addToCart({ title, text, srcImage, orderQtd });
+      addToCart({ id: uuidv4(), title, text, srcImage, orderQtd });
     }
   }
 

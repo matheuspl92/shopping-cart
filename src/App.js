@@ -17,6 +17,14 @@ function App() {
     setCart(newState);
   }
 
+  const removeFromCart = (id) => {
+    let [ ...newState ] = cart;
+    const orderToRemove = newState.indexOf({ id })
+    newState.splice(orderToRemove, 1);
+    setCart(newState);
+    console.log('deleted')
+  }
+
   useEffect(() => {
     console.log(cart)
   }, [cart])
@@ -28,7 +36,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home cart={cart} />} />
           <Route path='/shop' element={<Shop cart={cart} addToCart={addToCart}/>} />
-          <Route path='/cart' element={<Cart cart={cart} />} />
+          <Route path='/cart' element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
         </Routes>
         <Footer />
       </div>
