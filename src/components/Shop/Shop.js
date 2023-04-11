@@ -12,7 +12,7 @@ export default function Shop({ cart, addToCart }) {
             <Container fluid id='shop-container'>
                 <Row className='d-flex justify-content-center p-5'>
                     {products.map(product => {
-                        return <ItemCard key={uuidv4()} title={product.cardName} text={`Price: $ ${product.cardPrice}`} srcImage={product.cardImg} addToCart={addToCart} />
+                        return <ItemCard key={uuidv4()} title={product.cardName} price={product.cardPrice} srcImage={product.cardImg} addToCart={addToCart} />
                     })}
                 </Row>
             </Container>
