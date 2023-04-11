@@ -1,0 +1,16 @@
+.order-card {
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    gap: 16px;
+    background-color: rgb(173, 173, 173);
+    border-radius: 16px;
+    color: rgb(53, 53, 53);
+}
+
+.img-and-info,
+.total-and-button {
+    display: flex;
+    align-items: center;
+    gap: 32px
+}
