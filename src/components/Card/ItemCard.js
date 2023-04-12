@@ -24,7 +24,7 @@ export default function ItemCard({ title = 'Card Title', price = "", srcImage = 
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>
-          {`Price: ${price}`}
+          {`Price: $ ${price.toFixed(2)}`}
         </Card.Text>
         <div>
           <FormControl type='number' value={orderQtd} placeholder='Quantity' onChange={(event) => { handleQtdChange(event) }} />

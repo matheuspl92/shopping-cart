@@ -3,9 +3,9 @@
     align-items: center;
     justify-items: space-between;
     gap: 16px;
-    background-color: rgb(173, 173, 173);
-    border-radius: 16px;
     color: rgb(53, 53, 53);
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 .img-and-info,
