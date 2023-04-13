@@ -21,12 +21,12 @@ export default function ItemCard({ title = 'Card Title', price = "", srcImage = 
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={srcImage + '/300'} />
-      <Card.Body>
+      <Card.Body className='d-flex flex-column justify-content-between'>
         <Card.Title>{title}</Card.Title>
-        <Card.Text>
-          {`Price: $ ${price.toFixed(2)}`}
-        </Card.Text>
-        <div>
+        <div className="d-grid gap-2">
+          <Card.Text>
+            {`Price: $ ${price.toFixed(2)}`}
+          </Card.Text>
           <FormControl type='number' value={orderQtd} placeholder='Quantity' onChange={(event) => { handleQtdChange(event) }} />
           <Button variant="dark" onClick={handleAdd}>Add to cart</Button>
         </div>
