@@ -8,7 +8,7 @@ import './Shop.css';
 export default function Shop({ cart, addToCart }) {
     return (
         <div>
-            <h2>SHOP</h2>
+            <h2 className='shop-title'>Shopping page</h2>
             <Container fluid id='shop-container'>
                 <Row className='d-flex justify-content-center p-5'>
                     {products.map(product => {
