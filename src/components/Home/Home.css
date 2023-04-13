@@ -3,11 +3,9 @@ section {
     flex-direction: column;
 }
 
-h2 {
+.home-title {
     text-align: center;
-}
-
-#top {
+    margin: 32px 16px;
 }
 
 #middle {

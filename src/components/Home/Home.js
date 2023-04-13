@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <section id='top'>
-        <h2>Unleash the Red Team power!</h2>
+        <h2 className='home-title'>Unleash the Red Team power!</h2>
         <Image src='https://www.amd.com/system/files/2022-10/1678052-radeon-background-1920w_1.jpg' />
       </section>
       <section id='middle'>
