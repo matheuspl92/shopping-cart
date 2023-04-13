@@ -8,7 +8,7 @@ import sumPrices from '../../aux_functions/sumPrices';
 export default function Cart({ cart, removeFromCart }) {
   return (
     <div>
-      <h2>Your cart</h2>
+      <h2 className='cart-title'>Your cart</h2>
       <Container id='cart-container'>
         <Row className='d-flex justify-content-center p-5'>
           {cart.length ? cart.map((order) => {
@@ -18,7 +18,7 @@ export default function Cart({ cart, removeFromCart }) {
         </Row>
       </Container>
       {cart.length ? <Stack className='d-flex justify-content-end m-5' direction='horizontal' gap={5}>
-        <h3>{`Purchase total: $ ${sumPrices(cart).toFixed(2)}`}</h3>
+        <h3 className='cart-purchase'>{`Purchase total: $ ${sumPrices(cart).toFixed(2)}`}</h3>
         <Button size='lg' variant='dark'>Checkout</Button>
       </Stack> : null}
     </div>

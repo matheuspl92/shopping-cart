@@ -2,7 +2,13 @@
     min-height: 65vh;
 }
 
-h3 {
+.cart-title {
+    text-align: left;
+    margin-top: 32px;
+    margin-left: 36px;
+}
+
+.cart-purchase {
     color: gray;
     text-align: center;
 }
