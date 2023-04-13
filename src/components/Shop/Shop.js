@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import products from '../../data/products';
-import ItemCard from '../Card/ItemCard';
+import ItemCard from '../ItemCard/ItemCard';
 import { v4 as uuidv4 } from 'uuid';
 import './Shop.css';
 

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Button, Container, Row, Stack } from 'react-bootstrap';
-import OrderCard from '../Order/OrderCard';
+import OrderCard from '../OrderCard/OrderCard';
 import { v4 as uuidv4 } from 'uuid';
 import './Cart.css';
+import sumPrices from '../../aux_functions/sumPrices';
 
 export default function Cart({ cart, removeFromCart }) {
   return (
@@ -17,7 +18,7 @@ export default function Cart({ cart, removeFromCart }) {
         </Row>
       </Container>
       {cart.length ? <Stack className='d-flex justify-content-end m-5' direction='horizontal' gap={5}>
-        <h3>{`Order total: $`}</h3>
+        <h3>{`Purchase total: $ ${sumPrices(cart).toFixed(2)}`}</h3>
         <Button size='lg' variant='dark'>Checkout</Button>
       </Stack> : null}
     </div>

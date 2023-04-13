@@ -22,11 +22,9 @@ function App() {
     const orderToRemove = newState.indexOf({ id })
     newState.splice(orderToRemove, 1);
     setCart(newState);
-    console.log('deleted')
   }
 
   useEffect(() => {
-    console.log(cart)
   }, [cart])
 
   return (
