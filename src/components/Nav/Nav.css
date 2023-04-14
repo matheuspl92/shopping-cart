@@ -32,7 +32,7 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-a:hover, a:active {
+.nav-links:hover {
     color: white;
     text-decoration: underline;
 }
