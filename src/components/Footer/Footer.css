@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+    gap: 18px;
+    padding-top: 18px;
+}
+
+.footer-list {
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+}
+
+.footer-links:hover {
+    color: white;
+}

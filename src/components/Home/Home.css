@@ -13,14 +13,6 @@ section {
     color: white;
 }
 
-#bottom {
-    background-color: black;
-    color: white;
-    align-items: center;
-    gap: 18px;
-    padding-top: 18px;
-}
-
 .card {
     background-color: black;
 }
