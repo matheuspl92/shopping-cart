@@ -9,7 +9,6 @@ export default function ItemCard({ title = 'Card Title', price = "", srcImage = 
     const qtd = event.target.value;
 
     (qtd > 0) ? setOrderQtd(qtd) : setOrderQtd('');
-    console.log(qtd)
   }
 
   const handleAdd = () => {
