@@ -12,7 +12,6 @@ export default function Cart({ cart, removeFromCart }) {
       <Container id='cart-container'>
         <Row className='d-flex justify-content-center p-5'>
           {cart.length ? cart.map((order) => {
-            console.log(order)
             return <OrderCard key={uuidv4()} orderData={order} removeFromCart={removeFromCart} />
           }) : <h3>Things are pretty empty around here...</h3>}
         </Row>
