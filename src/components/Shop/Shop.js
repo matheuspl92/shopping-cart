@@ -5,7 +5,7 @@ import ItemCard from '../ItemCard/ItemCard';
 import { v4 as uuidv4 } from 'uuid';
 import './Shop.css';
 
-export default function Shop({ cart, addToCart }) {
+export default function Shop({ addToCart }) {
     return (
         <div>
             <h2 className='shop-title'>Shopping page</h2>
