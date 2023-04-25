@@ -32,9 +32,9 @@ function App() {
       <div className="App">
         <Nav cart={cart} />
         <Routes>
-          <Route path='/' element={<Home cart={cart} />} />
-          <Route path='/shop' element={<Shop cart={cart} addToCart={addToCart}/>} />
-          <Route path='/cart' element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
+          <Route path='shopping-cart/' element={<Home cart={cart} />} />
+          <Route path='shopping-cart/shop' element={<Shop cart={cart} addToCart={addToCart}/>} />
+          <Route path='shopping-cart/cart' element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
         </Routes>
         <Footer />
       </div>
